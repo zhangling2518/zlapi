@@ -1,0 +1,273 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-E438EIT",
+    "children" : [ {
+      "name" : "14032-MainThread",
+      "children" : [ {
+        "name" : "正确预定",
+        "uid" : "41eb82f0a2a2f23b",
+        "parentUid" : "9cbd25c62cc4a7fadca2a7be444f5fe9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596898237962,
+          "stop" : 1596898237963,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "登录数据测试",
+        "uid" : "1583a189e6f126fc",
+        "parentUid" : "9cbd25c62cc4a7fadca2a7be444f5fe9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596898237407,
+          "stop" : 1596898237408,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'10001'", "'密码为空'", "''", "'zhangsan'" ]
+      }, {
+        "name" : "无条件查询",
+        "uid" : "2dac6724ed1da8f6",
+        "parentUid" : "9cbd25c62cc4a7fadca2a7be444f5fe9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596898237752,
+          "stop" : 1596898237753,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "无条件查询",
+        "uid" : "ffca6000c2e4f457",
+        "parentUid" : "9cbd25c62cc4a7fadca2a7be444f5fe9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596898237550,
+          "stop" : 1596898237551,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "登录数据测试",
+        "uid" : "7b0689e99ed25946",
+        "parentUid" : "9cbd25c62cc4a7fadca2a7be444f5fe9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596898236453,
+          "stop" : 1596898236458,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'0'", "'正确登录'", "'MTIzMTIzNDU2'", "'zhangsan'" ]
+      }, {
+        "name" : "登录数据测试",
+        "uid" : "7d648e823222389a",
+        "parentUid" : "9cbd25c62cc4a7fadca2a7be444f5fe9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596898237337,
+          "stop" : 1596898237338,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'10001'", "'密码为空'", "''", "'zhangsan'" ]
+      }, {
+        "name" : "正确预定",
+        "uid" : "6ac20e417f9a48fe",
+        "parentUid" : "9cbd25c62cc4a7fadca2a7be444f5fe9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596898238025,
+          "stop" : 1596898238027,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "登录数据测试",
+        "uid" : "7620f8754595d99e",
+        "parentUid" : "9cbd25c62cc4a7fadca2a7be444f5fe9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596898236701,
+          "stop" : 1596898236703,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'0'", "'正确登录'", "'MTIzMTIzNDU2'", "'zhangsan'" ]
+      }, {
+        "name" : "登录数据测试",
+        "uid" : "43eb104f389246a9",
+        "parentUid" : "9cbd25c62cc4a7fadca2a7be444f5fe9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596898237258,
+          "stop" : 1596898237259,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'10001'", "'密码为空'", "''", "'zhangsan'" ]
+      }, {
+        "name" : "正确预定",
+        "uid" : "cf1578da48fba2b0",
+        "parentUid" : "9cbd25c62cc4a7fadca2a7be444f5fe9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596898237898,
+          "stop" : 1596898237899,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "登录数据测试",
+        "uid" : "120b612f71a45923",
+        "parentUid" : "9cbd25c62cc4a7fadca2a7be444f5fe9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596898237181,
+          "stop" : 1596898237182,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'10000'", "'密码错误'", "'123456'", "'zhangsan'" ]
+      }, {
+        "name" : "登录数据测试",
+        "uid" : "e4f9da8db1ec5665",
+        "parentUid" : "9cbd25c62cc4a7fadca2a7be444f5fe9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596898236968,
+          "stop" : 1596898236969,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'10000'", "'密码错误'", "'123456'", "'zhangsan'" ]
+      }, {
+        "name" : "登录数据测试",
+        "uid" : "13b70901ab47b1af",
+        "parentUid" : "9cbd25c62cc4a7fadca2a7be444f5fe9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596898237476,
+          "stop" : 1596898237477,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'10001'", "'密码为空'", "''", "'zhangsan'" ]
+      }, {
+        "name" : "登录数据测试",
+        "uid" : "5c11e7c84f9c00ff",
+        "parentUid" : "9cbd25c62cc4a7fadca2a7be444f5fe9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596898236795,
+          "stop" : 1596898236799,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'0'", "'正确登录'", "'MTIzMTIzNDU2'", "'zhangsan'" ]
+      }, {
+        "name" : "登录数据测试",
+        "uid" : "eeb4fe0ddb55c9ac",
+        "parentUid" : "9cbd25c62cc4a7fadca2a7be444f5fe9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596898236892,
+          "stop" : 1596898236893,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'0'", "'正确登录'", "'MTIzMTIzNDU2'", "'zhangsan'" ]
+      }, {
+        "name" : "登录数据测试",
+        "uid" : "1a8159c333e6a846",
+        "parentUid" : "9cbd25c62cc4a7fadca2a7be444f5fe9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596898237042,
+          "stop" : 1596898237043,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'10000'", "'密码错误'", "'123456'", "'zhangsan'" ]
+      }, {
+        "name" : "无条件查询",
+        "uid" : "ae73381bea566ce3",
+        "parentUid" : "9cbd25c62cc4a7fadca2a7be444f5fe9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596898237618,
+          "stop" : 1596898237620,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "无条件查询",
+        "uid" : "681eb56ca130b3f",
+        "parentUid" : "9cbd25c62cc4a7fadca2a7be444f5fe9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596898237683,
+          "stop" : 1596898237684,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "正确预定",
+        "uid" : "e71c88139886f51",
+        "parentUid" : "9cbd25c62cc4a7fadca2a7be444f5fe9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596898237833,
+          "stop" : 1596898237834,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "登录数据测试",
+        "uid" : "c41457ba86f8dc91",
+        "parentUid" : "9cbd25c62cc4a7fadca2a7be444f5fe9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596898237113,
+          "stop" : 1596898237114,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'10000'", "'密码错误'", "'123456'", "'zhangsan'" ]
+      } ],
+      "uid" : "9cbd25c62cc4a7fadca2a7be444f5fe9"
+    } ],
+    "uid" : "197cb95520a9017d95f1a8a14343d673"
+  } ]
+}

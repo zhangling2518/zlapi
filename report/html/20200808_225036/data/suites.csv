@@ -1,0 +1,10 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Sat Aug 08 22:50:37 CST 2020","Sat Aug 08 22:50:37 CST 2020","1","cases","test_geteventlist","","","","无条件查询","
+    查询所有活动
+    "
+"broken","Sat Aug 08 22:50:36 CST 2020","Sat Aug 08 22:50:36 CST 2020","1","cases","test_login","","","","登录数据测试",""
+"broken","Sat Aug 08 22:50:37 CST 2020","Sat Aug 08 22:50:37 CST 2020","1","cases","test_login","","","","登录数据测试",""
+"broken","Sat Aug 08 22:50:38 CST 2020","Sat Aug 08 22:50:38 CST 2020","2","cases","test_order","","","","正确预定","
+    预定活动
+    "
+"broken","Sat Aug 08 22:50:37 CST 2020","Sat Aug 08 22:50:37 CST 2020","1","cases","test_login","","","","登录数据测试",""

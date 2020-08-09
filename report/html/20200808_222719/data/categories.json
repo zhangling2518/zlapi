@@ -1,0 +1,86 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "requests.exceptions.MissingSchema: Invalid URL 'login/': No schema supplied. Perhaps you meant http://login/?",
+      "children" : [ {
+        "name" : "登录数据测试",
+        "uid" : "fbe0adb4d040e9fd",
+        "parentUid" : "519aa6631fe245e6b0f9f03d9a723046",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596896707672,
+          "stop" : 1596896707674,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'0'", "'正确登录'", "'MTIzMTIzNDU2'", "'zhangsan'" ]
+      }, {
+        "name" : "登录数据测试",
+        "uid" : "8a6475d6be66c04d",
+        "parentUid" : "519aa6631fe245e6b0f9f03d9a723046",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596896708010,
+          "stop" : 1596896708011,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'10000'", "'密码错误'", "'123456'", "'zhangsan'" ]
+      }, {
+        "name" : "登录数据测试",
+        "uid" : "153cc87e36a46d99",
+        "parentUid" : "519aa6631fe245e6b0f9f03d9a723046",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596896708339,
+          "stop" : 1596896708340,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'10001'", "'密码为空'", "''", "'zhangsan'" ]
+      } ],
+      "uid" : "519aa6631fe245e6b0f9f03d9a723046"
+    }, {
+      "name" : "requests.exceptions.MissingSchema: Invalid URL 'get_eventlist/': No schema supplied. Perhaps you meant http://get_eventlist/?",
+      "children" : [ {
+        "name" : "无条件查询",
+        "uid" : "b613f083057eea5e",
+        "parentUid" : "951c1b36007df2253fdbc757fdbbab2b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596896708660,
+          "stop" : 1596896708661,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "951c1b36007df2253fdbc757fdbbab2b"
+    }, {
+      "name" : "requests.exceptions.MissingSchema: Invalid URL 'order/': No schema supplied. Perhaps you meant http://order/?",
+      "children" : [ {
+        "name" : "正确预定",
+        "uid" : "5038171d267358d7",
+        "parentUid" : "84f23db7cd33accd637f30e104043974",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596896708988,
+          "stop" : 1596896708989,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "84f23db7cd33accd637f30e104043974"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

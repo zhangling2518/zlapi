@@ -1,0 +1,86 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "cases",
+    "children" : [ {
+      "name" : "test_login",
+      "children" : [ {
+        "name" : "登录数据测试",
+        "uid" : "fbe0adb4d040e9fd",
+        "parentUid" : "ad8748b508876214210dcbe11e9b93c8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596896707672,
+          "stop" : 1596896707674,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'0'", "'正确登录'", "'MTIzMTIzNDU2'", "'zhangsan'" ]
+      }, {
+        "name" : "登录数据测试",
+        "uid" : "8a6475d6be66c04d",
+        "parentUid" : "ad8748b508876214210dcbe11e9b93c8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596896708010,
+          "stop" : 1596896708011,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'10000'", "'密码错误'", "'123456'", "'zhangsan'" ]
+      }, {
+        "name" : "登录数据测试",
+        "uid" : "153cc87e36a46d99",
+        "parentUid" : "ad8748b508876214210dcbe11e9b93c8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596896708339,
+          "stop" : 1596896708340,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'10001'", "'密码为空'", "''", "'zhangsan'" ]
+      } ],
+      "uid" : "ad8748b508876214210dcbe11e9b93c8"
+    }, {
+      "name" : "test_geteventlist",
+      "children" : [ {
+        "name" : "无条件查询",
+        "uid" : "b613f083057eea5e",
+        "parentUid" : "c8e4d38af8ff62e7495f7f56f3407510",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596896708660,
+          "stop" : 1596896708661,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c8e4d38af8ff62e7495f7f56f3407510"
+    }, {
+      "name" : "test_order",
+      "children" : [ {
+        "name" : "正确预定",
+        "uid" : "5038171d267358d7",
+        "parentUid" : "81472f7c6831934fa68a99a7c28ddfbe",
+        "status" : "broken",
+        "time" : {
+          "start" : 1596896708988,
+          "stop" : 1596896708989,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "81472f7c6831934fa68a99a7c28ddfbe"
+    } ],
+    "uid" : "d4f25acf57632f6fe40a83cfe70f00b2"
+  } ]
+}

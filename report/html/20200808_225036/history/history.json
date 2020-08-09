@@ -1,0 +1,102 @@
+{
+  "b1b95536ec4ffb7c6dea1cec229fb305" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "13b70901ab47b1af",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.MissingSchema: Invalid URL 'login/': No schema supplied. Perhaps you meant http://login/?",
+      "time" : {
+        "start" : 1596898237476,
+        "stop" : 1596898237477,
+        "duration" : 1
+      }
+    } ]
+  },
+  "0962eec76ed6fc7cf26cfb8a2705cf01" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "120b612f71a45923",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.MissingSchema: Invalid URL 'login/': No schema supplied. Perhaps you meant http://login/?",
+      "time" : {
+        "start" : 1596898237181,
+        "stop" : 1596898237182,
+        "duration" : 1
+      }
+    } ]
+  },
+  "e57a0fc8715b70460863f57aeaa502bc" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "eeb4fe0ddb55c9ac",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.MissingSchema: Invalid URL 'login/': No schema supplied. Perhaps you meant http://login/?",
+      "time" : {
+        "start" : 1596898236892,
+        "stop" : 1596898236893,
+        "duration" : 1
+      }
+    } ]
+  },
+  "7d94785b336499bf4adc2845926c175b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6ac20e417f9a48fe",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.MissingSchema: Invalid URL 'order/': No schema supplied. Perhaps you meant http://order/?",
+      "time" : {
+        "start" : 1596898238025,
+        "stop" : 1596898238027,
+        "duration" : 2
+      }
+    } ]
+  },
+  "d08f7e1daf8bae270356a158d0d66807" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2dac6724ed1da8f6",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.MissingSchema: Invalid URL 'get_eventlist/': No schema supplied. Perhaps you meant http://get_eventlist/?",
+      "time" : {
+        "start" : 1596898237752,
+        "stop" : 1596898237753,
+        "duration" : 1
+      }
+    } ]
+  }
+}

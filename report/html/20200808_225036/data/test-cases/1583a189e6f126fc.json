@@ -1,0 +1,100 @@
+{
+  "uid" : "1583a189e6f126fc",
+  "name" : "登录数据测试",
+  "fullName" : "cases.test_login#test_login01",
+  "historyId" : "b1b95536ec4ffb7c6dea1cec229fb305",
+  "time" : {
+    "start" : 1596898237407,
+    "stop" : 1596898237408,
+    "duration" : 1
+  },
+  "status" : "broken",
+  "statusMessage" : "requests.exceptions.MissingSchema: Invalid URL 'login/': No schema supplied. Perhaps you meant http://login/?",
+  "statusTrace" : "username = 'zhangsan', password = '', error_code = '10001', msg = '密码为空'\n\n    @data('username, password, error_code, msg', csv('login.csv'))\n    @feature('用户登录接口')\n    @title('登录数据测试')\n    @order(order=1)\n    def test_login01(username, password, error_code, msg):\n        client = Client(url='login/', method=METHOD.POST, body_type=BODY_TYPE.FORM)\n        client.set_body(\"username\", username)\n        client.set_body(\"password\", password)\n>       client.send()\n\ncases\\test_login.py:18: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\ncore\\client.py:50: in send\n    self.res = requests.post(url=self.url, headers=self.headers, params=self.params,\nC:\\Users\\wml\\AppData\\Local\\Programs\\Python\\Python38-32\\lib\\site-packages\\requests\\api.py:119: in post\n    return request('post', url, data=data, json=json, **kwargs)\nC:\\Users\\wml\\AppData\\Local\\Programs\\Python\\Python38-32\\lib\\site-packages\\requests\\api.py:61: in request\n    return session.request(method=method, url=url, **kwargs)\nC:\\Users\\wml\\AppData\\Local\\Programs\\Python\\Python38-32\\lib\\site-packages\\requests\\sessions.py:516: in request\n    prep = self.prepare_request(req)\nC:\\Users\\wml\\AppData\\Local\\Programs\\Python\\Python38-32\\lib\\site-packages\\requests\\sessions.py:449: in prepare_request\n    p.prepare(\nC:\\Users\\wml\\AppData\\Local\\Programs\\Python\\Python38-32\\lib\\site-packages\\requests\\models.py:314: in prepare\n    self.prepare_url(url, params)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <PreparedRequest [POST]>, url = 'login/', params = OrderedDict()\n\n    def prepare_url(self, url, params):\n        \"\"\"Prepares the given HTTP URL.\"\"\"\n        #: Accept objects that have string representations.\n        #: We're unable to blindly call unicode/str functions\n        #: as this will include the bytestring indicator (b'')\n        #: on python 3.x.\n        #: https://github.com/psf/requests/pull/2238\n        if isinstance(url, bytes):\n            url = url.decode('utf8')\n        else:\n            url = unicode(url) if is_py2 else str(url)\n    \n        # Remove leading whitespaces from url\n        url = url.lstrip()\n    \n        # Don't do any URL preparation for non-HTTP schemes like `mailto`,\n        # `data` etc to work around exceptions from `url_parse`, which\n        # handles RFC 3986 only.\n        if ':' in url and not url.lower().startswith('http'):\n            self.url = url\n            return\n    \n        # Support for unicode domain names and paths.\n        try:\n            scheme, auth, host, port, path, query, fragment = parse_url(url)\n        except LocationParseError as e:\n            raise InvalidURL(*e.args)\n    \n        if not scheme:\n            error = (\"Invalid URL {0!r}: No schema supplied. Perhaps you meant http://{0}?\")\n            error = error.format(to_native_string(url, 'utf8'))\n    \n>           raise MissingSchema(error)\nE           requests.exceptions.MissingSchema: Invalid URL 'login/': No schema supplied. Perhaps you meant http://login/?\n\nC:\\Users\\wml\\AppData\\Local\\Programs\\Python\\Python38-32\\lib\\site-packages\\requests\\models.py:388: MissingSchema",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "requests.exceptions.MissingSchema: Invalid URL 'login/': No schema supplied. Perhaps you meant http://login/?",
+    "statusTrace" : "username = 'zhangsan', password = '', error_code = '10001', msg = '密码为空'\n\n    @data('username, password, error_code, msg', csv('login.csv'))\n    @feature('用户登录接口')\n    @title('登录数据测试')\n    @order(order=1)\n    def test_login01(username, password, error_code, msg):\n        client = Client(url='login/', method=METHOD.POST, body_type=BODY_TYPE.FORM)\n        client.set_body(\"username\", username)\n        client.set_body(\"password\", password)\n>       client.send()\n\ncases\\test_login.py:18: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\ncore\\client.py:50: in send\n    self.res = requests.post(url=self.url, headers=self.headers, params=self.params,\nC:\\Users\\wml\\AppData\\Local\\Programs\\Python\\Python38-32\\lib\\site-packages\\requests\\api.py:119: in post\n    return request('post', url, data=data, json=json, **kwargs)\nC:\\Users\\wml\\AppData\\Local\\Programs\\Python\\Python38-32\\lib\\site-packages\\requests\\api.py:61: in request\n    return session.request(method=method, url=url, **kwargs)\nC:\\Users\\wml\\AppData\\Local\\Programs\\Python\\Python38-32\\lib\\site-packages\\requests\\sessions.py:516: in request\n    prep = self.prepare_request(req)\nC:\\Users\\wml\\AppData\\Local\\Programs\\Python\\Python38-32\\lib\\site-packages\\requests\\sessions.py:449: in prepare_request\n    p.prepare(\nC:\\Users\\wml\\AppData\\Local\\Programs\\Python\\Python38-32\\lib\\site-packages\\requests\\models.py:314: in prepare\n    self.prepare_url(url, params)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <PreparedRequest [POST]>, url = 'login/', params = OrderedDict()\n\n    def prepare_url(self, url, params):\n        \"\"\"Prepares the given HTTP URL.\"\"\"\n        #: Accept objects that have string representations.\n        #: We're unable to blindly call unicode/str functions\n        #: as this will include the bytestring indicator (b'')\n        #: on python 3.x.\n        #: https://github.com/psf/requests/pull/2238\n        if isinstance(url, bytes):\n            url = url.decode('utf8')\n        else:\n            url = unicode(url) if is_py2 else str(url)\n    \n        # Remove leading whitespaces from url\n        url = url.lstrip()\n    \n        # Don't do any URL preparation for non-HTTP schemes like `mailto`,\n        # `data` etc to work around exceptions from `url_parse`, which\n        # handles RFC 3986 only.\n        if ':' in url and not url.lower().startswith('http'):\n            self.url = url\n            return\n    \n        # Support for unicode domain names and paths.\n        try:\n            scheme, auth, host, port, path, query, fragment = parse_url(url)\n        except LocationParseError as e:\n            raise InvalidURL(*e.args)\n    \n        if not scheme:\n            error = (\"Invalid URL {0!r}: No schema supplied. Perhaps you meant http://{0}?\")\n            error = error.format(to_native_string(url, 'utf8'))\n    \n>           raise MissingSchema(error)\nE           requests.exceptions.MissingSchema: Invalid URL 'login/': No schema supplied. Perhaps you meant http://login/?\n\nC:\\Users\\wml\\AppData\\Local\\Programs\\Python\\Python38-32\\lib\\site-packages\\requests\\models.py:388: MissingSchema",
+    "steps" : [ {
+      "name" : "接口详细信息:",
+      "time" : {
+        "start" : 1596898237407,
+        "stop" : 1596898237407,
+        "duration" : 0
+      },
+      "status" : "broken",
+      "statusMessage" : "requests.exceptions.MissingSchema: Invalid URL 'login/': No schema supplied. Perhaps you meant http://login/?\n",
+      "statusTrace" : "  File \"C:\\Users\\wml\\AppData\\Local\\Programs\\Python\\Python38-32\\lib\\site-packages\\allure_commons\\_allure.py\", line 157, in impl\n    return func(*a, **kw)\n  File \"E:\\python_project\\Fill\\core\\client.py\", line 50, in send\n    self.res = requests.post(url=self.url, headers=self.headers, params=self.params,\n  File \"C:\\Users\\wml\\AppData\\Local\\Programs\\Python\\Python38-32\\lib\\site-packages\\requests\\api.py\", line 119, in post\n    return request('post', url, data=data, json=json, **kwargs)\n  File \"C:\\Users\\wml\\AppData\\Local\\Programs\\Python\\Python38-32\\lib\\site-packages\\requests\\api.py\", line 61, in request\n    return session.request(method=method, url=url, **kwargs)\n  File \"C:\\Users\\wml\\AppData\\Local\\Programs\\Python\\Python38-32\\lib\\site-packages\\requests\\sessions.py\", line 516, in request\n    prep = self.prepare_request(req)\n  File \"C:\\Users\\wml\\AppData\\Local\\Programs\\Python\\Python38-32\\lib\\site-packages\\requests\\sessions.py\", line 449, in prepare_request\n    p.prepare(\n  File \"C:\\Users\\wml\\AppData\\Local\\Programs\\Python\\Python38-32\\lib\\site-packages\\requests\\models.py\", line 314, in prepare\n    self.prepare_url(url, params)\n  File \"C:\\Users\\wml\\AppData\\Local\\Programs\\Python\\Python38-32\\lib\\site-packages\\requests\\models.py\", line 388, in prepare_url\n    raise MissingSchema(error)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "用户登录接口"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "cases"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-E438EIT"
+  }, {
+    "name" : "thread",
+    "value" : "14032-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "cases.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "error_code",
+    "value" : "'10001'"
+  }, {
+    "name" : "msg",
+    "value" : "'密码为空'"
+  }, {
+    "name" : "password",
+    "value" : "''"
+  }, {
+    "name" : "username",
+    "value" : "'zhangsan'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "run(order=1)" ]
+  },
+  "source" : "1583a189e6f126fc.json",
+  "parameterValues" : [ "'10001'", "'密码为空'", "''", "'zhangsan'" ]
+}

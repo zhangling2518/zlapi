@@ -1,0 +1,29 @@
+<运行配置>
+    <全局配置>
+        <uid>4</uid>
+        <key>ab97f63764b608f6d01909d67b4a1c6d</key>
+        <rstr>123</rstr>
+    </全局配置>
+
+    <用例集合>
+        <login-login01 run="1"/>
+        <geteventlist-geteventlist01 run="1" />
+        <order-order01 run="1" />
+<!--        <demo-demo01 run="1" />-->
+<!--        <demo-demo02 run="1" />-->
+    </用例集合>
+
+    <接口模板>
+        <login>
+            <地址>login/</地址>
+            <方法类型>POST</方法类型>
+            <正文格式>form</正文格式>
+        </login>
+
+    </接口模板>
+
+
+
+</运行配置>
+
+

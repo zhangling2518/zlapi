@@ -1,0 +1,82 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "用户登录接口",
+    "children" : [ {
+      "name" : "登录数据测试",
+      "uid" : "eeb4fe0ddb55c9ac",
+      "parentUid" : "03f694873c2288738aa3e7f3052aa207",
+      "status" : "broken",
+      "time" : {
+        "start" : 1596898236892,
+        "stop" : 1596898236893,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'0'", "'正确登录'", "'MTIzMTIzNDU2'", "'zhangsan'" ]
+    }, {
+      "name" : "登录数据测试",
+      "uid" : "120b612f71a45923",
+      "parentUid" : "03f694873c2288738aa3e7f3052aa207",
+      "status" : "broken",
+      "time" : {
+        "start" : 1596898237181,
+        "stop" : 1596898237182,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'10000'", "'密码错误'", "'123456'", "'zhangsan'" ]
+    }, {
+      "name" : "登录数据测试",
+      "uid" : "13b70901ab47b1af",
+      "parentUid" : "03f694873c2288738aa3e7f3052aa207",
+      "status" : "broken",
+      "time" : {
+        "start" : 1596898237476,
+        "stop" : 1596898237477,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'10001'", "'密码为空'", "''", "'zhangsan'" ]
+    } ],
+    "uid" : "03f694873c2288738aa3e7f3052aa207"
+  }, {
+    "name" : "查询活动列表接口",
+    "children" : [ {
+      "name" : "无条件查询",
+      "uid" : "2dac6724ed1da8f6",
+      "parentUid" : "08d15dbf02e7afa69ebfc30bdbcff2b3",
+      "status" : "broken",
+      "time" : {
+        "start" : 1596898237752,
+        "stop" : 1596898237753,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "08d15dbf02e7afa69ebfc30bdbcff2b3"
+  }, {
+    "name" : "活动预定接口",
+    "children" : [ {
+      "name" : "正确预定",
+      "uid" : "6ac20e417f9a48fe",
+      "parentUid" : "05bc8be79fea568bf3899ba5b7124d03",
+      "status" : "broken",
+      "time" : {
+        "start" : 1596898238025,
+        "stop" : 1596898238027,
+        "duration" : 2
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "05bc8be79fea568bf3899ba5b7124d03"
+  } ]
+}
